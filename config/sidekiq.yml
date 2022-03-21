@@ -1,0 +1,8 @@
+:concurrency: 1
+:queues:
+  - default
+  - mailers
+:schedule:
+  alert_user_cron:
+    cron: '*/3 * * * *'   # Runs once per minute
+    class: TriggerAlertJob
