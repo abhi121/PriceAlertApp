@@ -12,6 +12,16 @@ RUN SERVER:
 rails s 
 
 
+create .env file with credentials
+
+DB_USERNAME
+DB_PASSWORD
+SENDGRID_PASSWORD
+
+
+Sendgrid smtp is configured, just need to add the password for apikey
+
+
 RUN SIDEKIQ: (redis required)
 bundle exec sidekiq
 
